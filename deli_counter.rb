@@ -3,7 +3,10 @@ def line(katz_deli)
   if(katz_deli.length==0) then
     puts "The line is currently empty."
   else
+    resp = "The line is currently:"
     
-    puts "The line is currently#{katz_deli.each_with_index.inject{ |ret = "@", (patron, index)| "#{ret} #{(index + 1).to_s}. #{patron}"}}"
+    katz_deli.each_with_index do |patron, index|
+      resp += "#{(index + 1).to_s} #{patron}"
+    end
   end
 end
