@@ -4,11 +4,14 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     resp = "The line is currently:"
+    counter = 0
     
-    katz_deli.length.times do |i|
-      resp += " #{i+1}. #{katz_deli[i]}"
+    katz_deli.each do |patron|
+      resp = resp + " #{counter.to_s}. #{patron}"
+      
+      counter += 1
     end
     
-    resp
+    puts resp
   end
 end
