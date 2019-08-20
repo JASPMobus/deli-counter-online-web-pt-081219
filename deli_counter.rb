@@ -7,7 +7,7 @@ def line(katz_deli)
     counter = 0
     
     katz_deli.each do |patron|
-      resp = resp + " #{counter).to_s}. #{patron}"
+      resp = resp + " #{counter.to_s}. #{patron}"
       
       counter += 1
     end
