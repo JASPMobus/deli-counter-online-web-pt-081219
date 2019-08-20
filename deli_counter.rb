@@ -4,6 +4,6 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     
-    puts "The line is currently#{katz_deli.each_with_index.inject{ |ret = "", (patron, index)| "#{ret} #{(index + 1).to_s}. #{patron}"}}"
+    puts "The line is currently#{katz_deli.each_with_index.inject{ |ret = "", (index, patron)| "#{ret} #{(index + 1).to_s}. #{patron}"}}"
   end
 end
