@@ -8,6 +8,8 @@ def line(katz_deli)
     
     katz_deli.each do |patron|
       resp = resp + " #{counter).to_s}. #{patron}"
+      
+      counter+=1
     end
     
     resp
