@@ -6,7 +6,7 @@ def line(katz_deli)
     resp = "The line is currently:"
     
     katz_deli.each_with_index do |patron, index|
-      resp += "#{(index + 1).to_s} #{patron}"
+      resp += " #{(index + 1).to_s} #{patron}"
     end
     
     resp
