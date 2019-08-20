@@ -8,5 +8,7 @@ def line(katz_deli)
     katz_deli.length.times do |i|
       resp += " #{i+1}. #{katz_deli[i]}"
     end
+    
+    resp
   end
 end
