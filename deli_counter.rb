@@ -8,5 +8,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |patron, index|
       resp += "#{(index + 1).to_s} #{patron}"
     end
+    
+    resp
   end
 end
