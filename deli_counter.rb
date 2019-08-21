@@ -18,5 +18,5 @@ def take_a_number(katz_deli, patron)
   katz_deli.push(patron)
 end
 
-def now_serving()
+def now_serving(katz_deli)
 end
