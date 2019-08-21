@@ -19,5 +19,7 @@ def take_a_number(katz_deli, patron)
 end
 
 def now_serving(katz_deli)
-  
+  if katz_deli.length == 0 then
+    puts "There is nobody waiting to be served!"
+  else
 end
