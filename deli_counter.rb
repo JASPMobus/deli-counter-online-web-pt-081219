@@ -6,8 +6,8 @@ def line(katz_deli)
     resp = "The line is currently:"
     counter = 1
     
-    katz_deli.each do |patron|
-      resp = resp + " #{counter.to_s}. #{patron}"
+    katz_deli.each_with_index do |patron, index|
+      resp = resp + " #{(index+1).to_s}. #{patron}"
       
       counter += 1
     end
